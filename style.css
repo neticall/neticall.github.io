@@ -1,0 +1,103 @@
+:root {
+    --background-color : #151515;
+    --primary-color : #005bff;
+    --seconary-color : #fffb00;
+    --text-color : #FFFFFF;
+}
+
+@font-face {
+    font-family: Sepahbod;
+    src: url('./Sepahbod.otf');
+}
+
+* {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: Sepahbod;
+    transition: all .2s;
+    text-align: center;
+    user-select: none;
+    outline: none;
+    border: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background: var(--background-color);
+}
+
+.container{
+    margin-top: 80px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 8px var(--primary-color);
+    border-radius: 50%;
+}
+
+.logo:hover{
+    transform: scaleX(360deg)
+}
+
+.name{
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.jobs{
+    font-size: 1.5rem;
+}
+
+.job{
+    color: var(--seconary-color);
+}
+
+.line{
+    width: 20px;
+    animation: blinker .8s linear infinite;
+    background: var(--primary-color);
+    color: var(--primary-color);
+}
+
+@keyframes blinker{
+    50%{opacity: 0;}
+}
+
+.social-media img{
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin: 15px 5px 20px;
+    padding: 6px;
+}
+
+.button{
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+a img:hover ,.button:hover{
+    box-shadow: 0 1px 5px var(--text-color);
+}
+
+.brand {
+    animation: brandAnimation 1.2s ease-in-out infinite;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: .9rem;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+
+@keyframes brandAnimation {
+    0%{letter-spacing: 1px;}
+    50%{letter-spacing: 4px;}
+    100%{letter-spacing: 1px;}
+}
