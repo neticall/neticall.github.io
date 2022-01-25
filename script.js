@@ -1,5 +1,5 @@
 let job = document.querySelector(".job")
-let myJobs = ['طراح وب', 'برنامه نویس'];
+let myJobs = ['طراح سایت', 'برنامه نویس'];
 let position = 0;
 let number = 0
 let textClear = false
