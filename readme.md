@@ -1,5 +1,4 @@
-#Life is practice and repetition
-
+### Life is practice and repetition
 
 > It was a training project
 > 
